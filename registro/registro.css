@@ -1,0 +1,261 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 768px) {
+    html, body {
+      width: 100%; 
+    }
+    
+    .contenedor-form {
+      width: 100%; 
+      max-width: 100%; 
+      height: 650px;
+      margin-right: 100px;
+      padding: 0; 
+      transform: scale(1); 
+      margin: 0 0 0; 
+      z-index: 0;
+    }
+    .contenedor-blanco {
+      width: 90vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      transform: scale(1);
+      z-index: 0;
+    }
+    .contenedor-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: none; 
+      z-index: -1;
+    }
+  .contenedor-img {
+      background: url(china.png) no-repeat center center;
+      background-size: cover;
+    }
+    
+    .contenedor-blanco {
+      background: rgba(0, 0, 0, 0.6); 
+    }
+
+    .logo {
+      max-width: 80%; 
+      margin: 0; 
+      float: none; 
+      text-align: right; 
+      background-color: #ffffff00;
+      transform: scale(0.8); 
+    }
+    
+    
+  }
+  .contenedores {
+    display: flex;
+    background-size: 100% 100%;
+    justify-content: space-between;
+    height: 100%; 
+  } 
+  .contenedor-blanco {
+  width: 900px;
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 5px; 
+  background: rgba(255, 255, 255, 0.7); 
+  flex: 1.5;   
+  height: 900px;
+}
+.contenedor-img {
+  flex: 0.6;
+  background: url(pollo.jpg) no-repeat center center;
+  background-size: cover;
+  max-width: 100%;
+  height: 900px;
+  display: block;
+  margin: 0 auto; 
+  filter: brightness(0.9);
+  
+}
+.logo {
+  max-width: 80%; 
+  width: 150px; 
+  height: auto; 
+  
+  margin: 0 auto; 
+  
+}
+.contenedor-form {
+  width: 80%;
+  max-width: 700px; 
+  height: 300px; 
+  margin: 0 auto 10px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 0;
+}
+
+.form-control {
+    width: 150px; 
+    height: 35px;
+}
+.input-nomape {
+    display: flex; 
+    justify-content: space-between; 
+    font-weight: bold;
+    font-size: 15px;
+}
+.input-nombre {
+    flex: 0.5; 
+    padding: 10px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.input-apellidos {
+    flex: 0.5; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.input-ciupro {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 0px; 
+}
+
+.input-ciudad {
+  flex: 0.5;
+  padding: 10px;
+  height: 10px;
+  box-sizing: border-box;
+}
+
+.input-provincia {
+  flex: 0.5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-ciudad select,
+.input-provincia select {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  appearance: none; 
+  background: url('flecha.png') no-repeat right center;
+  background-size: 20px;
+  cursor: pointer;
+  max-width: 100%; 
+}
+
+.input-ciudad select option,
+.input-provincia select option {
+  font-size: 16px; 
+}
+
+.input-ciudad select option:checked,
+.input-provincia select option:checked {
+  background-color: #0c243d; 
+  color: #fff; 
+}
+  .input-email {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 0px 0;
+  }
+  .input-numero {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+.error-message {
+  display: none; 
+  color: rgb(49, 44, 44); 
+  font-size: 10px; 
+  margin-top: 2px; 
+}
+
+input:invalid + .error-message {
+  display: block; 
+}
+
+  .input-contraseña {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box;
+    font-weight: bold;
+
+  }
+  #passwordHelpBlock{
+    font-size: 10px;
+    
+  }
+ 
+  .boton input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100%; 
+    max-width: 100px; 
+    background: #ff0000;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; 
+    display: block; 
+    transition: transform 0.3s;
+    
+  }
+  
+  .boton input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #000;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+    transform: scale(1.1);
+  }
+  .form-control::placeholder {
+    font-size: 14px;
+}
+.boton-retroceso {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.boton-retroceso img {
+  width: 25px;
+  height: 25px;
+}
+
+.boton-retroceso:hover {
+  transform: scale(1.2); 
+}

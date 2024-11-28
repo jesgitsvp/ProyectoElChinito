@@ -1,0 +1,440 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+#sube {
+    margin-right: 50px;
+}
+
+#a {
+    width: 165px;
+    height: 40px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+/* estilos del logo*/
+#img_ventas {
+    width: 110px;
+    height: 65px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+/* estilos de la presentacion*/
+.stefano_main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Present_figure {
+
+    padding: 20px 0;
+    order: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0px;
+}
+
+.Present_container {
+    background-color: white;
+}
+
+.Present_img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+
+}
+
+.Present_texto {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.Present_titulo {
+    font-size: 3rem;
+}
+
+.Present_descripcion {
+    font-family: 'Open Sans';
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+.btn-outline-danger {
+    color: #FFA07A !important;
+    border-color: #FFA07A !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: #FFA07A !important;
+    border-color: #FFA07A !important;
+    color: white !important; /* Cambiar el color del texto al pasar el cursor, si es necesario */
+}
+
+.btn-danger {
+    background-color: red; /* Color original del botón */
+    border-color: red;
+}
+
+.btn-danger:hover {
+    background-color: #FFA07A !important;
+    border-color: #FFA07A !important;
+    color: white !important; /* Cambiar el color del texto al pasar el cursor, si es necesario */
+}
+
+.Present_mp4 {
+    background-color: rgb(255, 140, 0);
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    justify-self: center;
+    border-radius: 40px;
+}
+
+/* estilos para el abaut*/
+
+.sec_nosotros {
+    background-color: rgb(248, 248, 248);
+}
+
+.nosotros_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nosotros_img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.nosotros_div {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.nosotros_texto {
+    font-family: 'Open Sans';
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+.subtitulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.texto {
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.sec_ofertas {
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+
+}
+
+.ofertas_articulo {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.ofertas_articulos {
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+}
+
+.ofertas_img {
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 70%;
+}
+
+/* SECCION OTROS*/
+.otros {
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+}
+
+.otros_img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.otros_texto {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.otros_boton {
+    background-color: rgb(255, 140, 0);
+    padding: 1em 3em;
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/*CONTENIDO FINAL*/
+.final {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0px;
+}
+
+.links {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.links h4 {
+    font-size: 1.2rem;
+    color: rgb(255, 140, 0);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.links h4::before {
+    content: "";
+    position: absolute;
+    font-size: 1.2rem;
+    color: aliceblue;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background-color: rgb(255, 140, 0);
+}
+
+.links ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.links ul li a {
+
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+    font-weight: 600;
+}
+
+.links ul li a:hover {
+    color: rgb(255, 140, 0);
+    transform: translateY(-5px);
+}
+
+.links .redes {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_img {
+    height: 40px;
+    width: 40px;
+}
+#img_productos {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
+
+
+/*CUANDO PASE DE 768 EJECUTARA:*/
+@media (min-width:768px) {
+
+   
+    .stefano_main {
+        flex-direction: row;
+        gap: 40px;
+        min-height: 550px;
+        align-items: center;
+    }
+
+    .Present_figure {
+        padding: 0;
+        order: 0;
+        width: 46%;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 80px 0px;
+    }
+
+    .Present_container {
+        background-color: white;
+    }
+
+    .Present_img {
+        max-width: 350px;
+
+    }
+
+    .Present_texto {
+        width: 54%;
+        text-align: start;
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+
+    .Present_titulo {
+        font-size: 3rem;
+
+    }
+
+    .Present_descripcion {
+        font-family: 'Open Sans';
+        margin-bottom: 0rem;
+    }
+
+    .Present_mp4 {
+        justify-self: start;
+    }
+
+
+
+
+    /*OTRA SECCION*/
+    /* estilos para el abaut*/
+    .sec_nosotros {
+        background-color: rgb(248, 248, 248);
+    }
+
+    .nosotros_figure {
+        width: 100%;
+    }
+
+    .nosotros_container {
+        flex-direction: row;
+    }
+
+    .nosotros_img {
+        width: 100%;
+    }
+
+    .nosotros_div {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0px 0px;
+    }
+
+    .nosotros_texto {
+        width: 100%;
+        text-align: center;
+        place-content: center;
+    }
+
+    .subtitulo {
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+    /*OFERTAS*/
+
+    .texto {
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .sec_ofertas {
+        gap: 1.5rem;
+    }
+
+    .ofertas_articulos {
+        gap: 2rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
+    /* SECCION OTROS*/
+    .otros {
+        text-align: start;
+    }
+
+    .otros_main {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .nosotros_figure {
+        width: 45%;
+    }
+
+    .otros_img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .otros_texto {
+        width: 65%;
+        place-content: center;
+    }
+
+    .otros_boton {
+        justify-self: center;
+    }
+
+}
+@media (max-width:991.5px) {
+    .menu_responsi{
+        text-align:center;
+    }
+    
+}
